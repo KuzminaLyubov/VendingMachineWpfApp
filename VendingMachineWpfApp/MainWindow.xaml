@@ -1,0 +1,50 @@
+﻿<Window x:Class="VendingMachineWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VendingMachineWpfApp"
+        mc:Ignorable="d"
+        Title="VendingMachine" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <GroupBox DockPanel.Dock="Left" Header="Select products" FontWeight="Bold">
+                <StackPanel x:Name="_productsPanel">
+
+                </StackPanel>
+            </GroupBox>
+            <StackPanel DockPanel.Dock="Right">
+                <Label x:Name="_labelCredit" Content="Credit:" FontWeight="Bold"/>
+                <TextBlock x:Name="_textBlockCredit" Height="20" FontWeight="Normal"/>
+                <Button x:Name="_buttonChange" Content="Change" Margin="5 0 5 5" FontWeight="Bold"
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right">
+                <GroupBox Header="Insert coins" FontWeight="Bold">
+                    <StackPanel>
+                        <Button x:Name="_button10" Content="10 RUB" Margin="5 0 5 5"
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                        <Button x:Name="_button5" Content="5 RUB"  Margin="5 0 5 5" 
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                        <Button x:Name="_button2" Content="2 RUB"  Margin="5 0 5 5" 
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                        <Button x:Name="_button1" Content="1 RUB"  Margin="5 0 5 5" 
+                                VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Insert bills" FontWeight="Bold">
+                    <StackPanel>
+                        <Button x:Name="_button50" Content="50 RUB" Margin="5 0 5 5"
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                        <Button x:Name="_button100" Content="100 RUB"  Margin="5 0 5 5" 
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                        <Button x:Name="_button500" Content="500 RUB"  Margin="5 0 5 5" 
+                        VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                        <Button x:Name="_button1000" Content="1000 RUB"  Margin="5 0 5 5" 
+                                VerticalAlignment="Top" Width="95" Height="25" HorizontalAlignment="Left" Click="_button_Click"/>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
